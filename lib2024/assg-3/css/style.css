@@ -1,0 +1,14 @@
+{css}
+@charset "utf-8";
+*{
+margin: 1;
+padding:1;
+}
+h1{
+	text-align:center;
+	}
+body{
+	background-color: powderblue;
+	text-align: center;
+	font-family: Arial; 
+	}
