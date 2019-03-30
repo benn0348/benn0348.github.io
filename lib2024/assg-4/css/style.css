@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	background: url(../img/circles-light.png);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.head-bar {
+	background: #7cc576;
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 220px;
+}
+header {
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+}
+#logo {
+	width: 130px;
+}
+.nav a {
+	display: inline;
+	list-style: none;
+	box-sizing: border-box;
+	margin: auto;
+	max-width: 1500px;
+}
+.navigation li {
+	font-size: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	clear: both;
+	width: 15%;
+	height: 66px;
+	line-height: 66px;
+	margin-right: 4%;
+	margin-left: 4%;
+	background: #6dcff6;
+	border-radius: 8px;
+}
+ul {
+	/*text-align:justify;*/
+	text-align: center;
+	width: 100%;
+}
+.header-elm {
+	float: left;
+}
+.main-content {
+	display: inline-block;
+	box-sizing: border-box;
+	padding-right: 15px;
+	padding-top: 15px;
+	width: 70%;
+	overflow: hidden;
+	height: auto;
+}
+.sidebar {
+	width: 30%;
+	padding-top: 15px;
+	float: right;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	height: auto;
+}
+.img-gallery {
+	width: 33%;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+}
+.image-gallery {
+	padding-left: 15px;
+}
+.main-text  {
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+}
+.cat-pictures {
+	width: 100%;
+	text-align: center;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.5em;
+}
+.images {
+	float:right;
+}
+figcaption {
+	text-align: center;
+}
+footer {
+	background: #7cc576;
+	width: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+}
+.text {
+position: relative;
+	top: 30px; 	 
+}
+.clearfix{
+overflow: auto;
+}
+.clearfix:after {
+	content: " ";
+	clear: both;
+}
