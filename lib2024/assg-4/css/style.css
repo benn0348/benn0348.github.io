@@ -45,18 +45,24 @@ table {
 body {
 	background: url(../img/circles-light.png);
 	font-family: 'Source Sans Pro', sans-serif;
+	width: 100%;
 }
 .head-bar {
 	background: #7cc576;
-	width: 100%;
 	padding-top: 15px;
 	padding-left: 25px;
 	padding-right: 25px;
 	height: 220px;
 }
+#Title {
+	position: relative;
+	top: 30px; 	
+	padding-left: 30px;
+}
 header {
 	font-size: 2.3em;
 	font-family: 'Open Sans', sans-serif;
+	width: 100%;
 }
 #logo {
 	width: 130px;
@@ -66,7 +72,6 @@ header {
 	list-style: none;
 	box-sizing: border-box;
 	margin: auto;
-	max-width: 1500px;
 }
 .navigation li {
 	font-size: 1.5em;
@@ -149,7 +154,7 @@ footer {
 position: relative;
 	top: 30px; 	 
 }
-.clearfix{
+.clearfix {
 overflow: auto;
 }
 .clearfix:after {
