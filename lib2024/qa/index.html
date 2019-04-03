@@ -66,6 +66,38 @@
 		<p>Qus:</strong>How would you link an external style sheet? Give example. </p>
 		<p>Ans:</strong> &lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt; is an example of how to link an external CSS style sheet to and HTML document. The CSS external style document must be saved in a sister folder to the index.html file as file type style.css</p>
 	</li>
+	<!-- Question 13 -->
+	<li>
+		<p>Qus:</strong>Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.</p>
+		<p>Ans:</strong> div {
+								position: absolute;
+								width: 200px;
+								height: 200px; 
+								padding-top: 100px;
+								margin: 0 auto;
+							}</p>
+	</li>
+	<!-- Question 14 -->
+	<li>
+		<p>Qus:</strong>Create CSS keyframes block called "spin" that rotates an element.</p>
+		<p>Ans:</strong> @keyframes spin {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}</p>
+	</li>
+	<!-- Question 15 -->
+	<li>
+		<p>Qus:</strong>Create CSS animation block to rotate an element that has the following properties: class "rotate-me" and it rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin" </p>
+		<p>Ans:</strong> .rotate-me {
+										spin 0.5s linear, 
+										animation-iteration-count: 5;
+									}
+									</p>
+	</li>
 </ol>
 </body>
 </html>
