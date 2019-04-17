@@ -1,0 +1,31 @@
+@charset "utf-8";
+body {
+	margin-right: 100px;
+	margin-left: 100px;
+	font-family: calibri;
+	}
+#header {
+		text-align: center;
+		}
+.heading { 
+	display: inline;
+	white-space: nowrap;
+		}
+ .info {
+	font-size: 30px;
+			}
+ .info-two {
+	font-size: 25px;
+			}
+table, th, td {
+  	border: 1px solid black;
+  	text-align: left;
+			}
+table {
+  	border-collapse: collapse;
+  	width: 100%;
+		}
+td, th {
+	padding: 5px;
+	}
+
