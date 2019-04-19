@@ -67,7 +67,7 @@ header {
 #logo {
 	width: 130px;
 }
-.nav a {
+.nav {
 	display: inline;
 	list-style: none;
 	box-sizing: border-box;
@@ -88,7 +88,6 @@ header {
 	border-radius: 8px;
 }
 ul {
-	/*text-align:justify;*/
 	text-align: center;
 	width: 100%;
 }
