@@ -105,24 +105,24 @@
 		</section>
 		<!-- End of Table Section -->
 		<!-- Begin Form Section -->
-		<section id="html-form" class="form-section">
+		<section id="html-form" class="form-section clearfix">
 			<h2>Edit Profile</h2>
 			<form action="somepage.php" method="get">
-				<div id="fn-container" class="form-elm">
+				<div id="fn-container" class="form">
 					<label for="Name">Name:</label>
 					<input type="text" name="Name" id="Name" placeholder="Full Name" required>
 				</div>
-				<div id="email-container" class="main-section">
+				<div id="email-container" class="form">
 					<label for="email">Email:</label>
 					<input type="email" name="e-mail" id="email" value="example@email.com" required>
 				</div>
-				<div id="home-address" class="Address">
+				<div id="home-address" class="form">
 					<label for="Address">Address:</label>
 						<input type="text" name="add" id="Address" placeholder="123 Happy St."><br>
 						<label for="city">City:</label>
 						<input type="text" name="city" id="city" placeholder="Pleasantville"><br>
 				</div>
-				<div id="prov" class="Address">
+				<div id="prov" class="form">
 						<label for="Province">Province:</label>
 						<select id="Province" name="province">
 							<optgroup label="Province">
@@ -142,35 +142,39 @@
 							</optgroup>
 						</select>
 					</div>
-				<div id="postal-code" class="Address">
+				<div id="postal-code" class="form">
 					<label for="postal-code">Postal Code:</label>
 					<input type="text" name="code" id="postal-code" placeholder="L9P 0B8">
 				</div>
 				<div>
 					<button>Submit</button>
 				</div>
-			<section id="profile" class="prof">
-				<h2>Profile Info</h2>
-				<p>John Doe<br>jdoe@algonquincollege.com<br>1385 Woodroffe Ave, Nepean<br>ON, K2G 1G8</p>
-				<div>
-					<a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i class="far fa-envelope"></i></a>
-				</div>
+				<section id="profile" class="profile-section">
+					<h2>Profile Info</h2>
+					<i class="far fa-user-circle"></i>
+					<p>John Doe<br>jdoe@algonquincollege.com<br>1385 Woodroffe Ave, Nepean<br>ON, K2G 1G8</p>
+					<div>
+						<a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i class="far fa-envelope"></i></a>
+					</div>
+				</section>
 			</section>
 		<!-- End of Form Section -->
 	</main>
 		<!-- Footer Sections Begins -->
 <footer id="footer" class="footer clearfix">
 	<div id="quick-links" class="footer">
-		<div>Quick Links<br>Schedule<br>About<br>Portfolio<br>Contact</div>
+		<h4>Quick Links</h2>
+		<div>Schedule<br>About<br>Portfolio<br>Contact</div>
 	</div>
 	<div id="follow-us" class="footer clearfix">
-		<p>Follow Us</p>
+		<h4>Follow Us</h4>
 		<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
 		<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a>
 		<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
 	</div>
 	<div id="address" class="footer">
-		<div>Address<br>1385 Woodroffe Ave,<br>Nepean, ON K2V 1G8<br>Canada</div>
+		<h4>Address</h4>
+		<div>1385 Woodroffe Ave,<br>Nepean, ON K2V 1G8<br>Canada</div>
 	</div>
 </footer>
 		<!-- End of Footer Section -->
