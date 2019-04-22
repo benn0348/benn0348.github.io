@@ -43,8 +43,9 @@ table {
 	border-spacing: 0;
 }
 @font-face {
-	font-family: "Nexa Rust Sans Black";
-	src: url (../Downloads/My_Fontspring_Fonts/Webfonts/nexarustsans);
+	font-family: NexaRust;
+	src: url(../fonts/nexarustsans-black-free-webfont.woff);
+	font-weight: bold;
 }
 header {
 	font-size: 2.3em;
@@ -53,7 +54,7 @@ header {
 	background-color: white;
 	width: 100%;
 	height: 110px;
-	font-family: Nexa Rust Sans Black;
+	font-family: NexaRust;
 	overflow: hidden;
 }
 #Title{
@@ -157,11 +158,27 @@ tr:nth-of-type(3 ) {
 	width: 100px;
 	display: inline-block;
 }
-.profile-form input {
+.form input, select {
+	background-color: white;
 	display: inline-block;
 	width: 250px;
 	border: 1px solid black;
 	font-size: 1em;
+	padding: 5px;
+}
+.sbutton {
+	background-color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	width: 80px;
+	border: 1px solid black;
+	font-size: 1em;
+	padding: 5px;
+}
+.profile-form button:hover {
+	background-color: #72a9ae;
+	color: #FFFFF0;
 }
 .profile-section {
 	float: right;
@@ -223,7 +240,6 @@ a {
 	color: #55acee;
 	}
  .clearfix {
-}
 overflow: auto;
 }
 .clearfix:after {

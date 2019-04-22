@@ -48,12 +48,12 @@
 				<p>Powder tiramisu icing. Powder gummi bears cupcake. Sweet cheesecake lemon drops. Oat cake jelly marzipan sesame snaps toffee candy. Cookie chocolate macaroon pudding. Croissant bear claw tart fruitcake cotton candy chocolate cake bear claw cake topping. Powder jujubes cupcake. Candy marzipan gingerbread pie. Tiramisu carrot cake jujubes. Tart chocolate oat cake dessert croissant chupa chups sesame snaps marshmallow sweet. Cake donut cake biscuit. Macaroon dessert toffee jujubes candy canes donut carrot cake oat cake.</p>
 			</div>
 			<figure class="image">
-				<img src="img/img.jpg" alt="Baby Chicken" width="330" height="235">
+				<img src="img/img.jpg" alt="Sassy Chicken" width="330" height="235">
 			</figure>
 		</section>
 		<!-- Body of Text Ends -->
 		<!-- Table Section Begins -->
-		<section id="schedule" class="table-section">
+		<section class="table-section">
 			<h2>Schedule:</h2>
 			<table>
 				<thead>
@@ -118,47 +118,48 @@
 					</div>
 					<div id="home-address" class="form">
 						<label for="Address">Address:</label>
-							<input type="text" name="add" id="Address" placeholder="123 Happy St."><br>
-							<label for="city">City:</label>
-							<input type="text" name="city" id="city" placeholder="Pleasantville"><br>
+						<input type="text" name="add" id="Address" placeholder="123 Happy St."><br>
+						<label for="city">City:</label>
+						<input type="text" name="city" id="city" placeholder="Pleasantville"><br>
 					</div>
 					<div id="prov" class="form">
-							<label for="Province">Province:</label>
-							<select id="Province" name="province">
-								<optgroup label="Province">
-									<option value="ON">Ontario</option>
-									<option value="MB" selected>Manitoba</option>
-									<option value="NB">New Brunswick</option>
-									<option value="AB">Alberta</option>
-									<option value="PE">Prince Edward Island</option>
-									<option value="NS">Nova Scotia</option>
-									<option value="NU">Nunavut</option>
-									<option value="NL">Newfoundland and Labrador</option>
-									<option value="BC">British Columbia</option>
-									<option value="NT">Northwest Territories</option>
-									<option value="QC">Quebec</option>
-									<option value="YT">Yukon Territory</option>
-									<option value="SK">Saskatchewan</option>
-								</optgroup>
-							</select>
-						</div>
-					<div id="postal-code" class="form">
+						<label for="Province">Province:</label>
+						<select id="Province" name="province">
+							<optgroup label="Province">
+								<option value="ON">Ontario</option>
+								<option value="MB" selected>Manitoba</option>
+								<option value="NB">New Brunswick</option>
+								<option value="AB">Alberta</option>
+								<option value="PE">Prince Edward Island</option>
+								<option value="NS">Nova Scotia</option>
+								<option value="NU">Nunavut</option>
+								<option value="NL">Newfoundland and Labrador</option>
+								<option value="BC">British Columbia</option>
+								<option value="NT">Northwest Territories</option>
+								<option value="QC">Quebec</option>
+								<option value="YT">Yukon Territory</option>
+								<option value="SK">Saskatchewan</option>
+							</optgroup>
+						</select>
+					</div>
+					<div id="post-code" class="form">
 						<label for="postal-code">Postal Code:</label>
-						<input type="text" name="code" id="postal-code" placeholder="A1B 2C4" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
+						<input type="text" name="postal-code" id="postal-code" placeholder="A1B 2C4" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
 					</div>
 					<div id="button" class="submit-button">
-						<button>Submit</button>
-					</div>	
-				</div>
+						<input class="sbutton" type="button" value="SUBMIT" onclick="showInput();">
+					</div>
+				</form>
+			</div>
 				<section id="profile" class="profile-section">
 					<h2>Profile Info</h2>
 					<div class="profile-box">
-						<i class="far fa-user-circle fa-5x"></i>
-						<h3>John Doe</h3>
-						<p>jdoe@algonquincollege.com<br>1385 Woodroffe Ave, Nepean<br>ON, K2G 1G8</p>
-						<div>
-							<a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
-						</div>
+						<i class="far fa-user-circle fa-7x"></i>
+						<h3 id="user-names">John Doe</h3>
+						<div id="user-email">jdoe@algonquincollege.com</div>
+						<div id="user-add">1385 Woodroffe Ave,</div><div id="user-city">Nepean</div> 
+						<div id="user-prov">ON,</div><div id="user-postal">K2G 1G8</div>
+						<a href="mailto:" id="mailto"><i class="far fa-envelope fa-2x"></i></a>
 					</div>
 				</section>
 			</section>
@@ -167,7 +168,7 @@
 		<!-- Footer Sections Begins -->
 <footer id="footer" class="footer clearfix">
 	<div id="quick-links" class="footer">
-		<h4>Quick Links</h2>
+		<h4>Quick Links</h4>
 		<p>Schedule<br>About<br>Portfolio<br>Contact</p>
 	</div>
 	<div id="follow-us" class="footer clearfix">
