@@ -47,6 +47,10 @@ table {
 	src: url(../fonts/nexarustsans-black-free-webfont.woff);
 	font-weight: bold;
 }
+.head-bar {
+	width: 100%;
+	max-width: 1100px;
+}
 header {
 	font-size: 2.3em;
 	font-weight: bold;
@@ -56,6 +60,7 @@ header {
 	height: 110px;
 	font-family: NexaRust;
 	overflow: hidden;
+	max-width: 1024px;
 }
 #Title{
 	padding-top: 30px; 	
@@ -66,6 +71,7 @@ header {
 	height: 45px;
 	overflow: hidden;
 	height: auto;
+	max-width: 1024px;
 }
 li {
 	float: left;
@@ -78,6 +84,7 @@ body {
 	background: url(../img/background.png);
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
 }
 h2, h3 {
 	color: #72a9ae; 
@@ -89,6 +96,7 @@ h2, h3 {
  	padding-top: 20px;
  	overflow: hidden;
 	height: auto;
+	max-width: 1024px;
  }
  .main-content {
  	width: 60%;
@@ -101,6 +109,8 @@ h2, h3 {
  	width: 35%;
 	float: right;
 	box-sizing: border-box;
+	overflow: hidden;
+	height: auto;
  }
 .table-section { 
 	width: 100%;
@@ -109,6 +119,7 @@ h2, h3 {
 	overflow: hidden;
 	height: auto;
 	padding-top: 30px;
+	max-width: 1024px;
  }
  h2 {
  	font-size: 1.5em;
@@ -145,6 +156,7 @@ tr:nth-of-type(3 ) {
 	padding-left: 40px;
 	padding-top: 30px;
 	height: auto;
+	max-width: 1024px;
 }
 .profile-form {
 	width: auto;
@@ -175,6 +187,26 @@ tr:nth-of-type(3 ) {
 	border: 1px solid black;
 	font-size: 1em;
 	padding: 5px;
+	}
+#loader {
+	margin: auto;
+	border: 16px solid #f3f3f3; 
+  	border-top: 16px solid #3498db; 
+  	border-radius: 50%;
+  	width: 120px;
+  	height: 120px;
+  	animation: 
+  		spin 2s linear infinite,
+  		ease-in-out infinite;
+  	display: none;
+}
+@keyframes spin {
+	from {
+				transform: rotate(0deg);
+			}
+	to {
+				transform: rotate(360deg);
+			}
 }
 .profile-form button:hover {
 	background-color: #72a9ae;
@@ -194,6 +226,7 @@ tr:nth-of-type(3 ) {
 }
 .fa-user-circle {
 	width: 100px;
+	margin: auto;
 }
 .profile-box {
 	background-color: white;
@@ -204,8 +237,9 @@ tr:nth-of-type(3 ) {
 	box-shadow: 5px 5px 20px 5px grey;
 	padding-top: 15px;
 	padding-bottom: 10px;
+	display: block;
 }
- footer {
+footer {
  	background-color: #454545;
  	width: 100%;
  	height: 255px;
@@ -220,6 +254,9 @@ tr:nth-of-type(3 ) {
 	color: white;
 	display: inline;
 	line-height: 1.5em;
+}
+.footer {
+	max-width: 1024px;
 }
 h4 {
 	font-size: 1.5em;
@@ -240,7 +277,7 @@ a {
 	color: #55acee;
 	}
  .clearfix {
-overflow: auto;
+overflow: hidden;
 }
 .clearfix:after {
 	content: " ";

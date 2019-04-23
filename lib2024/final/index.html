@@ -146,15 +146,16 @@
 						<label for="postal-code">Postal Code:</label>
 						<input type="text" name="postal-code" id="postal-code" placeholder="A1B 2C4" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]">
 					</div>
-					<div id="button" class="submit-button">
-						<input class="sbutton" type="button" value="SUBMIT" onclick="showInput();">
-					</div>
+						<div id="button" class="submit-button">
+							<input class="sbutton" type="button" value="SUBMIT" onclick="loadinganimation();">
+						</div>
 				</form>
 			</div>
 				<section id="profile" class="profile-section">
 					<h2>Profile Info</h2>
-					<div class="profile-box">
-						<i class="far fa-user-circle fa-7x"></i>
+					<div id="profile-box" class="profile-box">
+						<div id="loader"></div>
+						<i id= "user-circle" class="far fa-user-circle fa-7x"></i>
 						<h3 id="user-names">John Doe</h3>
 						<div id="user-email">jdoe@algonquincollege.com</div>
 						<div id="user-add">1385 Woodroffe Ave, Nepean</div>
